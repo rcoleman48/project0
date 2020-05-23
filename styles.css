@@ -1,0 +1,24 @@
+h1 {
+	color: blue;
+	test-align: center;
+}
+
+ol > li {
+	color: blue;
+}
+
+button { 
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
+	background-color: red;
+}
+
+button:hover {
+	background-color: blue;
+	font-size: 26px;
+}
+
+a::before {
+	content: "\25ba";
+}
