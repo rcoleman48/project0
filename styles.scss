@@ -1,0 +1,70 @@
+$primary: blue;
+$secondary: green;
+
+#MainTitle {
+	color: $primary;
+}
+
+#SecondaryTitle {
+	color: $secondary;
+}
+
+h1 {
+	color: blue;
+	test-align: center;
+}
+
+ol > li {
+	color: blue;
+}
+
+ul > li {
+	color: red;
+}
+
+button { 
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
+	background-color: red;
+}
+
+button:hover {
+	background-color: blue;
+	font-size: 26px;
+}
+
+a::before {
+	content: "\25ba";
+	font-weight: bold;
+}
+
+@media (max-width 25px){
+	body {
+		background-color: red;
+	}
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div {
+	p {
+		color: $secondary
+	}
+	
+}
+
+%message {
+	font-family: sans-serif;
+	font-size: 34px;
+	border: 1px solid black;
+}
+
+.urgentMessage {
+	@extend %message;
+	background-color: red;
+	font-weight: bold;
+}
